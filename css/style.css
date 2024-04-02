@@ -24,6 +24,9 @@ main{
 #list-container{
     min-width: 800px;
     background-color: white;
-    margin: auto;
-    
+    margin: auto;  
+}
+
+.pointer{
+    cursor: pointer;
 }

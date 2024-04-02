@@ -22,8 +22,10 @@
             <h2 class="text-center text-uppercase">To Be Read</h2>
                 <ul class="list-group list-group-flush rounded border border-5 border-light mt-4">
                     <li class="list-group-item d-flex justify-content-between pointer" v-for="(item,index) in todo" :key="item.id">
-                       <span :class="{'text-decoration-line-through' : item.done}" @click="toggleDone(index)">{{item.text}}</span>
-                       <i class="fa-solid fa-trash-can"></i>
+                       <span :class="{'text-decoration-line-through' : item.done}" @click="toggleDone(item.id)">
+                        {{item.text}}
+                        </span>
+                       <i class="fa-regular fa-circle-xmark" style="color: #ff2600;"></i>
                     </li>
                    
                 </ul>

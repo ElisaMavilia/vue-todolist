@@ -9,9 +9,15 @@ createApp({
         }
     },
     methods:{
-        toggleDone(i){
-            this.todo[i].done = !this.todo[i].done
-        }
+        toggleDone(id){
+            const item = this.todo.find((el)=>{
+            return el.id === id;
+            })
+            console.log(item);
+            if(item){
+                item.done = !item.done;
+            }
+        } 
     },
     mounted(){
         console.log(this.todo);

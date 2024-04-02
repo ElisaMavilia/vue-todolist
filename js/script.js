@@ -9,7 +9,9 @@ createApp({
         }
     },
     methods:{
-        
+        toggleDone(i){
+            this.todo[i].done = !this.todo[i].done
+        }
     },
     mounted(){
         console.log(this.todo);

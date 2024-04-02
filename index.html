@@ -25,10 +25,16 @@
                        <span :class="{'text-decoration-line-through' : item.done}" @click="toggleDone(item.id)">
                         {{item.text}}
                         </span>
-                       <i class="fa-regular fa-circle-xmark" style="color: #ff2600;" @click="removeItem(item.id)"></i>
+                       <i class="fa-regular fa-circle-xmark" @click="removeItem(item.id)"></i>
                     </li>
-                   
                 </ul>
+                <div id="input-container" class="d-flex justify-content-between pt-4">
+                    <input class="form-control me-4 " type="text" id="todotext" v-model="itemText" @keyup.enter>
+                    <button class="btn btn-success" @click="addTodo()">Add</button>
+                </div>
+                
+               
+
             </div>
         </main>
     </div>

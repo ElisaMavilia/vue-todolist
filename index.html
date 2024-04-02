@@ -17,10 +17,9 @@
         <header class="p-4">
             
         </header>
-        <main class="ps-4">
-            <h2 class="text-center ">To Be Read List</h2>
-            <div class="ps-4 pe-4" id="list-container">
-                <ul class="list-group list-group-flush">
+        <main class="p-4">
+            <h2 class="text-center text-uppercase ">To Be Read List</h2>
+                <ul class="list-group list-group-flush rounded border border-5 border-light mt-4 ">
                     <li class="list-group-item" v-for="(item,index) in todo" :key="item.id">{{item.text}}</li>
                 </ul>
             </div>

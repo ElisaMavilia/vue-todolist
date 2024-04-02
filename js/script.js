@@ -2,17 +2,17 @@ import {todo} from './data.js';
 
 const {createApp} = Vue;
 
-createApp ({
+createApp({
     data(){
         return {
-
+            todo: todo
         }
     },
-     methods:{
-
-    },
-    mounted:{
+    methods:{
         
+    },
+    mounted(){
+        console.log(this.todo);
     }
-}).mount('#app');
 
+}).mount('#app');

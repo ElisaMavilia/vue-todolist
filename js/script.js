@@ -43,6 +43,7 @@ createApp({
             });
             newObj.id = nextId + 1;
             this.todo.unshift(newObj);
+            this.itemText = '';
             console.log(this.todo);
         }
     },

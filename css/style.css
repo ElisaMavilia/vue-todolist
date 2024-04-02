@@ -1,8 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Montserrat", sans-serif;
 
 }
 
 header{
-    background-color: rgb(153, 197, 212);
+    background-color: rgb(221, 241, 248);
+}
+
+main{
+    width: 100%;
+    background-color: rgb(221, 241, 248);
+}
+
+#list-container{
+    min-width: 800px;
+    background-color: white;
+    margin: auto;
 }

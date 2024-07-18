@@ -18,6 +18,7 @@ createApp({
             if(item){
                 item.done = !item.done;
             }
+    
         },
 
         removeItem(id){

@@ -112,7 +112,7 @@ main {
       transform: rotate(0deg); /* Torna alla posizione iniziale */
     }
     75% {
-      transform: rotate(-4deg); /* Ruota a sinistra di 10 gradi */
+      transform: rotate(-5deg); /* Ruota a sinistra di 10 gradi */
     }
     100% {
       transform: rotate(0deg); /* Torna alla posizione iniziale */

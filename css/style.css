@@ -29,6 +29,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 #text-container h2 {
@@ -36,6 +37,9 @@ main {
     margin: 0;
     color: #5a3e36;
     padding-top: 70px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 #shelf-img {

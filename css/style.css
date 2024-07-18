@@ -4,29 +4,114 @@
     box-sizing: border-box;
 }
 
-
-
-body{
-    font-family: "Montserrat", sans-serif;
-
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffeedc;
+    color: #5a3e36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-header{
-    background-color: #8DCFA9;
-    border-bottom: 2px solid white;
+main {
+    background-color: #ffd7b5;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main{
-    width: 100%;
-    background-color: #D1ECDD;
+#text-container {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#list-container{
-    min-width: 800px;
-    background-color: white;
-    margin: auto;  
+#text-container h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #5a3e36;
 }
 
-.pointer{
+#shelf-img {
+    width: 300px;
+    position: relative;
+}
+#shelf-down-container {
+    position: relative;
+}
+#shelf-down {
+    width: 300px;
+}
+
+#stack{
+    width: 150px;
+    position: absolute;
+    bottom: 42%;
+    left: 4%;
+}
+
+
+
+#title {
+   position: absolute;
+   top: 4%;
+   left: 29%;
+   font-size: 3.2em;
+   
+}
+
+.oscillating-image {
+    width: 150px;
+    animation: rotateOscillate 4s infinite ease-in-out;
+}
+
+@keyframes rotateOscillate {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+.list-group {
+    background-color: #ffd7b5;
+}
+
+.list-group-item {
+    background-color: #ffeedc;
+    border: 1px solid #f9b28b;
+}
+
+.list-group-item .fa-circle-xmark {
+    color: #d9534f;
     cursor: pointer;
+}
+
+.list-group-item .fa-circle-xmark:hover {
+    color: #c9302c;
+}
+
+#input-container {
+    margin-top: 20px;
+}
+
+.form-control {
+    flex: 1;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #449d44;
+    border-color: #398439;
 }

@@ -22,16 +22,22 @@
               <!--   <img id="spot-img" src="img/spot.png" alt="spot"> -->
                  <img id="shelf-img" src="img/pngegg.png" alt="shelf">
                
-               <h2 id="title" class="text-start pt-5">To be Read...</h2>
-                <img class="oscillating-image" id="plants-img" src="img/plants.png" alt="plants">
+               <h2 id="title" class="text-start">To be Read...</h2>
+                <!-- <img class="oscillating-image" id="plants-img" src="img/plants.png" alt="plants"> -->
+                <div id="shelf-center-container">
+                    <img id="shelf-center" src="img/pngegg.png" alt="shelf">
+                    <img id="cat-image" src="img/cat.png" alt="cat">
+                    <img id="mug-image" class="jumping-image" src="img/mug.png" alt="mug">
+                </div>
+               
             </div>
             <div id="shelf-down-container">
                 <img id="shelf-down" src="img/pngegg.png" alt="shelf">
-                <img id="stack" src="img/books.png" alt="">
+                <img id="stack" src="img/books.png" alt="books">
+                <img class="oscillating-image" id="hanging-image" src="img/hanging.png" alt="">
             </div>
-            
             <div>
-                <ul class="list-group list-group-flush rounded border border-5 border-light mt-4">
+                <ul class="list-group list-group-flush rounded border border-5 border-light">
                     <li class="list-group-item d-flex justify-content-between pointer" v-for="(item,index) in todo" :key="item.id">
                        <span :class="{'text-decoration-line-through' : item.done}" @click="toggleDone(item.id)">
                         {{item.text}}
